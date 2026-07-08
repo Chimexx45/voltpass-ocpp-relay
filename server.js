@@ -31,10 +31,6 @@ app.get("/health", (req, res) => {
   });
 });
 
-const wss = new WebSocketServer({
-  server,
-  path: "/api/public/ocpp",
-});
 
 const routeWss = new WebSocketServer({ noServer: true });
 
